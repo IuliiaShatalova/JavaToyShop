@@ -7,12 +7,18 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Lottery lottery = new Lottery();
+        Controller controller = new Controller();
 
-        ArrayList<Toy> toys = lottery.createToys();
+        ArrayList<Toy> toys = new ArrayList<>();
+        toys.add(new Toy(1, "Кукла", 20));
+        toys.add(new Toy(2, "Мяч", 50));
+        toys.add(new Toy(3, "Конструктор", 10));
+        toys.add(new Toy(4, "Мягкая игрушка", 40));
+        toys.add(new Toy(5, "Настольная игра", 5));
 
-        int number = 10;
+        int numberOfPrizes = 20; // Сколько нужно призов получить
 
-        lottery.fileWriter(toys, "lottery_result.txt", number);
+        controller.fileWriter(toys, "lottery_result.txt", numberOfPrizes);
     }
+
 }
