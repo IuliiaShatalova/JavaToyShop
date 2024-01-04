@@ -11,19 +11,15 @@ public class Toy {
         this.weight = weight;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public int getWeight() {
         return weight;
     }
 
     public String toString() {
-        return String.format("%d, %s, %d", getId(), getName(), getWeight());
+        return "id: " + this.id + " name: " + this.name + "\n";
+    }
+
+    public int compareTo(Toy toy) {
+        return toy.getWeight() - this.getWeight();
     }
 }

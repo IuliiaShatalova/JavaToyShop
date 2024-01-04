@@ -9,6 +9,7 @@ public class Lottery {
     PriorityQueue<Toy> prizesList = new PriorityQueue<>(Toy::compareTo);
     public ArrayList<Toy> createToys() {
         ArrayList<Toy> toys = new ArrayList<>();
+
         toys.add(new Toy(1,"Кукла", 20));
         toys.add(new Toy(2, "Мяч", 20));
         toys.add(new Toy(3,"Мишка", 60));
