@@ -13,7 +13,6 @@ public class Lottery {
         toys.add(new Toy(1,"Кукла", 20));
         toys.add(new Toy(2, "Мяч", 20));
         toys.add(new Toy(3,"Мишка", 60));
-
         return toys;
     }
 
