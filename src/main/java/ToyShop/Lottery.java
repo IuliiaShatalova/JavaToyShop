@@ -20,7 +20,7 @@ public class Lottery {
     public PriorityQueue<Toy> createQueue(ArrayList<Toy> toys, int number) {
 
         for (int i = 0; i < toys.size(); i++) {
-            for (int j = 0; j < (toys.get(i).getWeight() * number / 100); j++) {
+            for (int j = 0; j < 10; j++) {
                 prizesList.add(toys.get(i));
             }
         }
